@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileImportProcessingSagaNSB5.ConsoleClient", "FileImportProcessingSagaNSB5.ConsoleClient\FileImportProcessingSagaNSB5.ConsoleClient.csproj", "{B5A967CE-CA0F-4B76-BF65-4D07B8F38924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileImportProcessingSagaNSB5.Conventions", "FileImportProcessingSagaNSB5.Conventions\FileImportProcessingSagaNSB5.Conventions.csproj", "{7CB2FF0A-D9AB-4354-8E0C-669944CBFD07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileImportProcessingSagaNSB5.Messages", "FileImportProcessingSagaNSB5.Messages\FileImportProcessingSagaNSB5.Messages.csproj", "{329E7C55-AEED-4A9B-8EEA-6027A85570B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileImportProcessingSagaNSB5.FileImportInsertionEndpoint", "ileImportProcessingSagaNSB5.FileImportInsertionEndpoint\FileImportProcessingSagaNSB5.FileImportInsertionEndpoint.csproj", "{DE107176-D369-4FA5-B9FC-CC8F17E8EEA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileImportProcessingSagaNSB5.SagaEndpoint", "FileImportProcessingSagaNSB5.SagaEndpoint\FileImportProcessingSagaNSB5.SagaEndpoint.csproj", "{B3C661CF-5E8E-4F76-8EBE-5936484A4A4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5A967CE-CA0F-4B76-BF65-4D07B8F38924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A967CE-CA0F-4B76-BF65-4D07B8F38924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A967CE-CA0F-4B76-BF65-4D07B8F38924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A967CE-CA0F-4B76-BF65-4D07B8F38924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB2FF0A-D9AB-4354-8E0C-669944CBFD07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB2FF0A-D9AB-4354-8E0C-669944CBFD07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB2FF0A-D9AB-4354-8E0C-669944CBFD07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB2FF0A-D9AB-4354-8E0C-669944CBFD07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{329E7C55-AEED-4A9B-8EEA-6027A85570B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329E7C55-AEED-4A9B-8EEA-6027A85570B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329E7C55-AEED-4A9B-8EEA-6027A85570B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329E7C55-AEED-4A9B-8EEA-6027A85570B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE107176-D369-4FA5-B9FC-CC8F17E8EEA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE107176-D369-4FA5-B9FC-CC8F17E8EEA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE107176-D369-4FA5-B9FC-CC8F17E8EEA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE107176-D369-4FA5-B9FC-CC8F17E8EEA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C661CF-5E8E-4F76-8EBE-5936484A4A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C661CF-5E8E-4F76-8EBE-5936484A4A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C661CF-5E8E-4F76-8EBE-5936484A4A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C661CF-5E8E-4F76-8EBE-5936484A4A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
