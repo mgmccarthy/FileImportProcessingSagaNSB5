@@ -1,4 +1,5 @@
-﻿using NServiceBus;
+﻿using System;
+using NServiceBus;
 
 namespace FileImportProcessingSagaNSB5.Conventions
 {
@@ -7,9 +8,16 @@ namespace FileImportProcessingSagaNSB5.Conventions
         public void Customize(BusConfiguration configuration)
         {
             configuration.Conventions()
-                .DefiningCommandsAs(t => t.Namespace != null && t.Namespace.EndsWith("Commands"))
-                .DefiningEventsAs(t => t.Namespace != null && t.Namespace.EndsWith("Events"))
-                .DefiningMessagesAs(t => t.Namespace != null && t.Namespace.EndsWith("InternalMessages"));
+                .DefiningCommandsAs(t => IsFromMessageAssembly(t) && t.Namespace.EndsWith("Commands"))
+                .DefiningEventsAs(t => IsFromMessageAssembly(t) && t.Namespace.EndsWith("Events"))
+                .DefiningMessagesAs(t => IsFromMessageAssembly(t) && t.Namespace.EndsWith("InternalMessages"));
+        }
+
+        private static bool IsFromMessageAssembly(Type t)
+        {
+            return t.Namespace != null
+                && !t.Namespace.StartsWith("NServiceBus.")
+                && !t.Namespace.StartsWith("System.");
         }
     }
 }
