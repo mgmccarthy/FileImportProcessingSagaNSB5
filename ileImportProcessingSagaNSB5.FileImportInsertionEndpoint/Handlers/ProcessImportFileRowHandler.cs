@@ -21,9 +21,9 @@ namespace FileImportProcessingSagaNSB5.FileImportInsertionEndpoint.Handlers
         public void Handle(ProcessImportFileRow message)
         {
             if (message.FirstImportRowForThisImport)
-                bus.Publish(new FileImportInitiated { ImportId = message.ImportId, TotalNumberOfFilesInImport = message.TotalTotalNumberOfFilesInImport });
+                bus.Publish(new FileImportInitiated { ImportId = message.ImportId, TotalNumberOfFilesInImport = message.TotalNumberOfFilesInImport });
 
-            //check/validate import data. In the real world, there would be rules run here, db queries, etc... to determine if it's succesful or not
+            //check/validate import data. In the real world, there would be rules run here, db queries, etc... to determine if this row in the import is successfull or not
             var success = new Random().Next(100) % 2 == 0;
             LogManager.GetLogger(typeof(ProcessImportFileRowHandler)).Warn(string.Format("Handling ProcessImportFileRow for Customer: {0}", message.CustomerId));
             using (var session = dataStore.OpenSession())

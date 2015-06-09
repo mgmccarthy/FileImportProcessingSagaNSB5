@@ -8,6 +8,6 @@ namespace FileImportProcessingSagaNSB5.Messages.Commands
         public int CustomerId { get; set; }
         public string CustomerName { get; set; }
         public bool FirstImportRowForThisImport { get; set; }
-        public int TotalTotalNumberOfFilesInImport { get; set; }
+        public int TotalNumberOfFilesInImport { get; set; }
     }
 }
