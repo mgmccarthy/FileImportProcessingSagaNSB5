@@ -36,7 +36,7 @@ namespace FileImportProcessingSagaNSB5.SagaEndpoint
             Log.Warn("handling FileImportSuccesAndFailureCount");
             Log.Warn(string.Format("RowsSucceeded: {0}, RowsFailed: {1}", message.RowsSucceeded, message.RowsFailed));
 
-            if (message.RowsSucceeded + message.RowsFailed >= Data.TotalNumberOfFilesInImport)
+            if (message.RowsSucceeded + message.RowsFailed == Data.TotalNumberOfFilesInImport)
             {
                 Bus.Publish(new FileImportCompleted { ImportId = message.ImportId });
                 Log.Warn("Saga Complete");
