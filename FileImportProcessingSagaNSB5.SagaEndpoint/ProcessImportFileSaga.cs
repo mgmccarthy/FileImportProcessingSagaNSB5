@@ -18,7 +18,6 @@ namespace FileImportProcessingSagaNSB5.SagaEndpoint
         protected override void ConfigureHowToFindSaga(SagaPropertyMapper<SagaData> mapper)
         {
             mapper.ConfigureMapping<FileImportInitiated>(msg => msg.ImportId).ToSaga(data => data.ImportId);
-            mapper.ConfigureMapping<FileImportSuccesAndFailureCount>(msg=> msg.ImportId).ToSaga(data => data.ImportId);
         }
 
         public void Handle(FileImportInitiated message)
